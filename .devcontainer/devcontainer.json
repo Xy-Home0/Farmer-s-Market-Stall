@@ -1,0 +1,16 @@
+{
+    "name": "Java GUI Fix",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {
+            "password": "vscode"
+        }
+    },
+    "onCreateCommand": "sudo rm -f /etc/apt/sources.list.d/yarn.list && sudo apt-get update",
+    "customizations": {
+        "codespaces": {
+            "openPorts": [6080]
+        }
+    },
+    "remoteUser": "codespace"
+}
